@@ -1,0 +1,36 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: sb-aws-eks-webapp-deploy
+spec:
+ replicas: 2
+ strategy: 
+  type: RollingUpdate
+ selector:
+  matchLabels:
+   app: sb-aws-eks-webapp
+ template:
+  metadata:
+   name: sb-aws-eks-app-pod
+   labels:
+    app: sb-aws-eks-webapp
+  spec:
+   containers:
+   - name: sb-aws-eks-webapp-container
+     image: prasanth239/springboot-aws-eks-webapp
+     ports:
+     - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+ name: sb-aws-eks-webapp-svc
+spec:
+ type: LoadBalancer
+ selector:
+  app: sb-aws-eks-webapp
+ ports:
+  - port: 80
+    targetPort: 8080
+...

@@ -106,3 +106,56 @@ To https://github.com/PrasanthNandyalaa/Springboot-rest-aws-eks-cluster-deploy.g
 
 npras@LAPTOP-U9SJMLN4 MINGW64 ~/Documents/Spring-Tool-Suite(STS)-4-4.26.0Workspace/Springboot-rest-aws-eks-cluster-deploy (main)
 $
+
+
+
+npras@LAPTOP-U9SJMLN4 MINGW64 ~/Documents/Spring-Tool-Suite(STS)-4-4.26.0Workspace/Springboot-rest-aws-eks-cluster-deploy (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Dockerfile
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git-push.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+npras@LAPTOP-U9SJMLN4 MINGW64 ~/Documents/Spring-Tool-Suite(STS)-4-4.26.0Workspace/Springboot-rest-aws-eks-cluster-deploy (main)
+$ git add .
+
+npras@LAPTOP-U9SJMLN4 MINGW64 ~/Documents/Spring-Tool-Suite(STS)-4-4.26.0Workspace/Springboot-rest-aws-eks-cluster-deploy (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Dockerfile
+        new file:   git-push.txt
+
+
+npras@LAPTOP-U9SJMLN4 MINGW64 ~/Documents/Spring-Tool-Suite(STS)-4-4.26.0Workspace/Springboot-rest-aws-eks-cluster-deploy (main)
+$ git commit -m "Dockerfile modified"
+[main be8b33d] Dockerfile modified
+ 2 files changed, 109 insertions(+), 1 deletion(-)
+ create mode 100644 git-push.txt
+
+npras@LAPTOP-U9SJMLN4 MINGW64 ~/Documents/Spring-Tool-Suite(STS)-4-4.26.0Workspace/Springboot-rest-aws-eks-cluster-deploy (main)
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.50 KiB | 1.50 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/PrasanthNandyalaa/Springboot-rest-aws-eks-cluster-deploy.git
+   30da019..be8b33d  main -> main
+
+npras@LAPTOP-U9SJMLN4 MINGW64 ~/Documents/Spring-Tool-Suite(STS)-4-4.26.0Workspace/Springboot-rest-aws-eks-cluster-deploy (main)
+$
