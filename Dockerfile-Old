@@ -1,0 +1,6 @@
+FROM openjdk:17
+MAINTAINER "Prasanth"
+COPY target/sb-rest-aws-eks.jar  /usr/app/
+WORKDIR /usr/app/
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "sb-rest-aws-eks.jar"]
