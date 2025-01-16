@@ -24,4 +24,4 @@ COPY --from=build /app/target/sb-rest-aws-eks.jar /app/sb-rest-aws-eks.jar
 EXPOSE 8080
 
 # Command to run the application
-ENTRYPOINT ["java", "-jar", "/app/spring-boot-docker-app.jar"]
+ENTRYPOINT ["java", "-jar", "/app/sb-rest-aws-eks.jar"]

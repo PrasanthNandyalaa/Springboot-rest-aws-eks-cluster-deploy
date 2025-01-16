@@ -1,0 +1,108 @@
+
+npras@LAPTOP-U9SJMLN4 MINGW64 ~/Documents/Spring-Tool-Suite(STS)-4-4.26.0Workspace/Springboot-rest-aws-eks-cluster-deploy
+$ git init
+Initialized empty Git repository in C:/Users/npras/Documents/Spring-Tool-Suite(STS)-4-4.26.0Workspace/Springboot-rest-aws-eks-cluster-deploy/.git/
+
+npras@LAPTOP-U9SJMLN4 MINGW64 ~/Documents/Spring-Tool-Suite(STS)-4-4.26.0Workspace/Springboot-rest-aws-eks-cluster-deploy (master)
+$ echo "# Springboot-rest-aws-eks-cluster-deploy" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/PrasanthNandyalaa/Springboot-rest-aws-eks-cluster-deploy.git
+git push -u origin main
+Reinitialized existing Git repository in C:/Users/npras/Documents/Spring-Tool-Suite(STS)-4-4.26.0Workspace/Springboot-rest-aws-eks-cluster-deploy/.git/
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+[master (root-commit) 8dd56da] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 242 bytes | 242.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/PrasanthNandyalaa/Springboot-rest-aws-eks-cluster-deploy.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+npras@LAPTOP-U9SJMLN4 MINGW64 ~/Documents/Spring-Tool-Suite(STS)-4-4.26.0Workspace/Springboot-rest-aws-eks-cluster-deploy (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitattributes
+        .gitignore
+        .mvn/
+        Dockerfile
+        Dockerfile-Old
+        mvnw
+        mvnw.cmd
+        pom.xml
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+npras@LAPTOP-U9SJMLN4 MINGW64 ~/Documents/Spring-Tool-Suite(STS)-4-4.26.0Workspace/Springboot-rest-aws-eks-cluster-deploy (main)
+$ git add .
+warning: in the working copy of '.gitattributes', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.mvn/wrapper/maven-wrapper.properties', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'mvnw.cmd', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'pom.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/boot/aws_eks/SpringbootRestAwsEksClusterDeployApplication.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/application.properties', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/test/java/com/boot/aws_eks/SpringbootRestAwsEksClusterDeployApplicationTests.java', LF will be replaced by CRLF the next time Git touches it
+
+npras@LAPTOP-U9SJMLN4 MINGW64 ~/Documents/Spring-Tool-Suite(STS)-4-4.26.0Workspace/Springboot-rest-aws-eks-cluster-deploy (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitattributes
+        new file:   .gitignore
+        new file:   .mvn/wrapper/maven-wrapper.properties
+        new file:   Dockerfile
+        new file:   Dockerfile-Old
+        new file:   mvnw
+        new file:   mvnw.cmd
+        new file:   pom.xml
+        new file:   src/main/java/com/boot/aws_eks/SpringbootRestAwsEksClusterDeployApplication.java
+        new file:   src/main/java/com/boot/aws_eks/controller/WelcomeController.java
+        new file:   src/main/resources/application.properties
+        new file:   src/test/java/com/boot/aws_eks/SpringbootRestAwsEksClusterDeployApplicationTests.java
+
+
+npras@LAPTOP-U9SJMLN4 MINGW64 ~/Documents/Spring-Tool-Suite(STS)-4-4.26.0Workspace/Springboot-rest-aws-eks-cluster-deploy (main)
+$ git commit -m "added all files"
+[main 30da019] added all files
+ 12 files changed, 593 insertions(+)
+ create mode 100644 .gitattributes
+ create mode 100644 .gitignore
+ create mode 100644 .mvn/wrapper/maven-wrapper.properties
+ create mode 100644 Dockerfile
+ create mode 100644 Dockerfile-Old
+ create mode 100644 mvnw
+ create mode 100644 mvnw.cmd
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/com/boot/aws_eks/SpringbootRestAwsEksClusterDeployApplication.java
+ create mode 100644 src/main/java/com/boot/aws_eks/controller/WelcomeController.java
+ create mode 100644 src/main/resources/application.properties
+ create mode 100644 src/test/java/com/boot/aws_eks/SpringbootRestAwsEksClusterDeployApplicationTests.java
+
+npras@LAPTOP-U9SJMLN4 MINGW64 ~/Documents/Spring-Tool-Suite(STS)-4-4.26.0Workspace/Springboot-rest-aws-eks-cluster-deploy (main)
+$ git push
+Enumerating objects: 30, done.
+Counting objects: 100% (30/30), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (29/29), 9.60 KiB | 2.40 MiB/s, done.
+Total 29 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/PrasanthNandyalaa/Springboot-rest-aws-eks-cluster-deploy.git
+   8dd56da..30da019  main -> main
+
+npras@LAPTOP-U9SJMLN4 MINGW64 ~/Documents/Spring-Tool-Suite(STS)-4-4.26.0Workspace/Springboot-rest-aws-eks-cluster-deploy (main)
+$
